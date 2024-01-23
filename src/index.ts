@@ -10,11 +10,11 @@ app.use(express.urlencoded({ extended: true }))
 
 app.get("/test", async (req, res) => {
   return res.status(200).json({
-    name: "João Pedro",
+    name: "João Pedro Correa Monteiro",
     age: 21
   })
 })
 
-app.listen(8080, () => {
+app.listen(3000, () => {
   console.log(`typescript server running on port ${8080}`);
 })
