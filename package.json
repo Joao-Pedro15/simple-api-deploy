@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx mocha --require ts-node/register test/*.test.ts",
     "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules --respawn index.ts",
     "start": "node dist/index.js",
     "build": "tsc"
@@ -18,7 +19,10 @@
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
+    "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.5",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.2",
     "ts-node-dev": "^1.1.8",
     "typescript": "^5.3.3"
   }
